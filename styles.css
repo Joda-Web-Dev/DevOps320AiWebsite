@@ -1,86 +1,96 @@
 :root {
-    --primary-gradient: linear-gradient(135deg, #4b0082, #8a2be2);
-    --text-color: #ffffff;
-    --background-color: #f9f9f9;
-    --nav-color: #4b0082;
+  --primary-gradient: linear-gradient(135deg, #4b0082, #8a2be2);
+  --text-color: #ffffff;
+  --background-color: #f9f9f9;
+  --nav-color: #4b0082;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    color: #333;
-    background: var(--background-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #333;
+  background: var(--background-color);
 }
 
 header {
-    background: var(--primary-gradient);
-    color: var(--text-color);
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  background: var(--primary-gradient);
+  color: var(--text-color);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav-links {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: var(--text-color);
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 .hamburger {
-    display: none;
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    color: var(--text-color);
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--text-color);
 }
 
 .project-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 .project-card {
-    background: var(--primary-gradient);
-    color: var(--text-color);
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
+  background: var(--primary-gradient);
+  color: var(--text-color);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.projectLink {
+  color: white;
+  text-decoration: none;
+}
+
+.projectLink:hover {
+  color: darkblue;
+  text-decoration: underline;
 }
 
 footer {
-    background: var(--nav-color);
-    color: var(--text-color);
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
+  background: var(--primary-gradient);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
 }
 
 @media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
+  .hamburger {
+    display: block;
+  }
 
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background: var(--primary-gradient);
-        padding: 1rem;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 200px;
-    }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: var(--primary-gradient);
+    padding: 1rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+  }
 
-    .nav-links.show {
-        display: flex;
-    }
+  .nav-links.show {
+    display: flex;
+  }
 }
