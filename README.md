@@ -40,3 +40,13 @@ Thankfully I have done this several times and didn't face any issues this time.
 
 This README serves as a guide to understanding the purpose and development process behind this repository.
 
+UPDATE - Setting up Github Actions
+
+1. I turned off automatic publishing on Github.
+2. Created the .github\workflows directory, and the deploy.yml file using the file provided in the assignment
+3. Added, committed, and pushed changes
+4. Checked workflow on Github and made sure everything worked
+5. Checked that the site is live and updated.
+
+Deployment can be triggered by pushing to the master branch, or manually on the github repository. 
+For manual deployment, go to github repository, actions, deploy static content to pages and click run workflow.
